@@ -7,10 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta name="description" content="Ball Picking Robot, Mechatronics McMaster Capstone 2016">
+    <meta name="author" content="Alfred Lam, Mohamed Fouda">
+	<meta name="keywords" content="ball, picking, robot, BPR, autonomous, golf">
 
-    <title>Home — The BPR - McMaster CAS Capstone 2016</title>
+    <title>BPR - Home</title> 
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +36,8 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,18 +47,18 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.html">
-                    <img class="img-responsive" src="img/logo_banner.png" alt="">
+                    <img class="img-responsive" src="img/logo_banner.png" alt=""> <!-- we need to make this logo bigger, currently too blurry -->
                 </a>
                 <!--<a class="navbar-brand" href="index.html">The Ball Picking Robot</a>-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-inverse navbar-right">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Team</a></li>
-                    <li><a href="post.html">Team</a></li>
-                    <li><a href="contact.html">Timeline</a></li>
+                    <li><a href="post.html">Gallery</a></li> 					<!-- make sure to update this to a page with our gallery stuff -->
+                    <li><a href="contact.html">Contact</a></li>					<!-- we can easily set up a group gmail, in case people actually want to email us about anything... -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -72,23 +73,21 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <!--
-                        <h1>Clean Blog</h1>
+                        <!--<h1>Clean Blog</h1>
                         <hr class="small">-->
-                        <br><br>
-                        <span class="subheading">Driving ranges are constantly filled with scattered golf balls, requiring operators to collect them regularly, costing labour and time.</span>
+                        <span class="subheading">Driving ranges are constantly filled with scattered golf balls, requiring operators to collect them regularly. This costs labour and time.</span>
                         <br><br>
 
                         <div class="video-container">
                             <!--<iframe width="784" height="441" src="https://www.youtube.com/embed/8J7JZcsoHyA" frameborder="0" allowfullscreen style="border:5px dotted white"></iframe>-->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8J7JZcsoHyA" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="700" height="393" src="https://www.youtube.com/embed/8J7JZcsoHyA" frameborder="0" allowfullscreen></iframe>
                         </div><br><br>
 
-                        <span class="subheading">Build an autonomous robot that reduces the need for human interaction in the process of collecting golf balls on a driving range.</span>
+                        <span class="subheading">Using a robot to collect golf balls will minimize human labour, thereby reducing cost and increasing safety on a driving range.</span>
                         <br><br>
 
                         <h2 class="post-title text-center">Why?</h2>
-                        <h3 class="post-subtitle text-center">Problems look mighty small from 150 miles up</h3>
+                        <h3 class="post-subtitle text-center">Problems look small from 150 miles up</h3>
 
                     </div>
                 </div>
@@ -136,8 +135,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <!--
+                    <!--
+					<ul class="list-inline text-center">
+                       
                         <li>
                             <a href="#">
                                 <span class="fa-stack fa-lg">
@@ -162,12 +162,16 @@
                                 </span>
                             </a>
                         </li>
-                    -->
-                    </ul>
-                    <p class="copyright text-muted">A Capstone Project By <a href="about.html">Group #1</a><BR>CAS - McMaster University 2016</p>
-                    <br>
-                    <img align="middle" src="img/CAPSTONE_LOGO_v2ww.png" width="10%" height="10%">
-                    <br>
+                    
+                    </ul>-->
+					
+					<p class="summary-title">Who are we?</p>
+					<p class="summary">We are a team of seven Mechatronics and Software Engineering students at McMaster University. The BPR was created as a proof of concept for a larger vision; the Autonomous Robot Platform.
+					With this, we are hoping to prove that common tasks such as picking up and collecting objects can be made more efficient and less costly with the use of robotics.</summary>
+					
+                    <p class="copyright text-muted">Project by <a href="about.html">Group 1</a><br>CAS - McMaster University 2016<br>&copy 2016 BPR</p>
+				    <p style="text-align:center;"><img align="center" src="img/CAPSTONE_LOGO_v2ww.png" width="10%" height="10%"></p>
+
                 </div>
             </div>
         </div>
