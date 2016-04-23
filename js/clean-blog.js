@@ -72,9 +72,9 @@ $(function() {
 
 
 // Contact form
-var name = $('#contactForm').find('name').html();
-var email = $('#contactForm').find('email').html();
-var description = $('#contactForm').find('message').html();
+var name = $('#contactForm').find("input[name='name']").val();
+var email = $('#contactForm').find("input[name='_replyto']").val();
+var description = $('#contactForm').find("textarea[name='message']").val();
 
 var message =
 		'<ul>'+
@@ -92,7 +92,7 @@ $("#sendMessage").on("click", function() {
     $.ajax({
         url: "//formspree.io/ballpickingrobot@gmail.com", 
         method: "POST",
-        data: {message,message},
+        data: {message: message},
         dataType: "json"
     });
     alert('Thanks for the email, we\'ll be in touch promptly.');
