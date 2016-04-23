@@ -5,7 +5,8 @@
  */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  /*font-family: 'Lora', 'Times New Roman', serif;*/
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 		/* serif fonts ftw */
   font-size: 20px;
   color: #404040;
 }
@@ -26,16 +27,20 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #404040;
+  color: #f2f2f2;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #0085a1;																	/* not entirely sure why this doesn't apply to the nav bar hover colour... */
 }
+
+/*
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
+  cursor: zoom-in;																	/* we don't need this for now, can reenable in the future */
 }
+*/
+
 blockquote {
   color: #808080;
   font-style: italic;
@@ -66,7 +71,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background: #222;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
@@ -104,8 +109,8 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
+    /*background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;*/
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -118,7 +123,8 @@ hr.small {
     color: #0085a1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    /*color: #404040;*/
+	color: #f2f2f2
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
@@ -279,21 +285,26 @@ footer .list-inline {
   padding: 0;
 }
 footer .copyright {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  margin-bottom: 0;
+  padding-top: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }  
 
-/* used for 'who are we?' text  -- NOT CURRENTLY WORKING */
 footer .summary-title {
-  color:white
+  color: #f2f2f2;
   font-size: 16px;
+  margin-top: 10px; 
+  margin-bottom: 5px;
 }
 footer .summary {
+  color: #9c9c9c;
   width: 350px;
-  font-size: 16px;
+  font-size: 14px;
   float: left;
-  padding: 10px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .floating-label-form-group {

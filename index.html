@@ -13,11 +13,12 @@
 
     <title>BPR - Home</title> 
 
+	<!-- FOR THE LOVE OF GOD please make sure this is NOT the min.css file, and the regular formatted with whitespace .css file. Please. -->
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -35,6 +36,9 @@
 
 <body>
 
+	<!-- I (Alfred) eventually want to move away from the collapsing nav bar. It's a cool concept, but I think we benefit more from having it.
+	Our website is not exactly dense, nor are we screaming for space. Take a look at Facebook, Twitter, etc... they don't use collapsing nav bars either for a good reason. -->
+	
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
         <div class="container">
@@ -47,20 +51,20 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.html">
-                    <img class="img-responsive" src="img/logo_banner.png" alt=""> <!-- we need to make this logo bigger, currently too blurry -->
+                    <img class="img-responsive" src="img/logo_banner.png" alt=""> 			<!-- we need to make this logo bigger, currently too blurry -->
                 </a>
                 <!--<a class="navbar-brand" href="index.html">The Ball Picking Robot</a>-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-inverse navbar-right">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Team</a></li>
                     <li><a href="post.html">Gallery</a></li> 					<!-- make sure to update this to a page with our gallery stuff -->
                     <li><a href="contact.html">Contact</a></li>					<!-- we can easily set up a group gmail, in case people actually want to email us about anything... -->
                 </ul>
-            </div>
+            </div>			
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -165,15 +169,15 @@
                     
                     </ul>-->
 					
-					<!-- the CSS styling here is fucked, trying to fix it... -->
-					<p class="summary-title">Who are we?</p>
-					<p class="summary">We are a team of seven Mechatronics and Software Engineering students at McMaster University. The BPR was created as a proof of concept for a larger vision; the Autonomous Robot Platform.
-					With this, we are hoping to prove that common tasks such as picking up and collecting objects can be made more efficient and less costly with the use of robotics.</summary>
-					
-                    <p class="copyright text-muted">Project by <a href="about.html">Group 1</a><br>CAS - McMaster University 2016<br>&copy 2016 BPR</p>
-				    <p style="text-align:center;"><img align="center" src="img/CAPSTONE_LOGO_v2ww.png" width="10%" height="10%"></p>
-
+					<p class="footer summary-title">WHO ARE WE?</p>
+					<p class="footer summary">We are a team of seven Mechatronics and Software Engineering students at McMaster University. The BPR was created as a proof of concept for a larger vision; the Autonomous Robot Platform.
+					With this, we are hoping to prove that common tasks such as picking up and collecting objects can be made more efficient and less costly with the use of robotics.</p>                    
                 </div>
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<p class="copyright text-muted"><br>CAS - McMaster University<br>&copy 2016 BPR</p>
+					<!-- for now clicking logo will refresh home page... I want to eventually make it maybe just scroll user to top of page. Looks better. --> 
+				    <p style="text-align:center; margin-top: 0px; margin-bottom: 0px;"><a href="index.html"><img align="center" src="img/CAPSTONE_LOGO_v2ww.png" width="10%" height="10%"></a></p>
+				</div>
             </div>
         </div>
     </footer>
