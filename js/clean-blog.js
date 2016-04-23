@@ -73,7 +73,20 @@ $(function() {
 */
 
 // Contact form
-var message = "";
+var name = $('#contactForm').name;
+var email = $('#contactForm').email;
+var description = $('#contactForm').message;
+
+var message =
+		'<ul>'+
+			'<li>'+
+					'Name: ' + name +
+			'</li>' +
+					'Email: ' + email +
+			'<li>'+
+					'Description: ' + description +
+			'</li>' +
+		'</ul>';
 
 $("#sendMessage").on("click", function() {
     message = $("#contactForm").serialize();
