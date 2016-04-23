@@ -40,7 +40,7 @@
 	Our website is not exactly dense, nor are we screaming for space. Take a look at Facebook, Twitter, etc... they don't use collapsing nav bars either for a good reason. -->
 	
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -58,7 +58,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-inverse navbar-right">
+                <ul class="nav navbar-nav navbar-default navbar-right">
                     <li><a href="index.html">Home</a></li>
 					<li><a href="post.html">Gallery</a></li> 					<!-- make sure to update this to a page with our gallery stuff -->
                     <li><a href="about.html">Team</a></li>
@@ -72,7 +72,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-color: #808080">
+    <header class="intro-header" style="background-color: #b7d6e3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -179,7 +179,7 @@
 					</div>
 					
 					<div class="column" style="float: right;">
-						<form name="sentMessage" id="contactForm" novalidate>
+						<form name="sentMessage" id="contactForm" method="post" action="mail/contact_me.php">
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
 								<label>Name</label>

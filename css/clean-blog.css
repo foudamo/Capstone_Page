@@ -71,11 +71,11 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: #222;
+    background: transparent;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: #484848;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
@@ -83,7 +83,7 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: #7e7b7b;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -109,8 +109,8 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    /*background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;*/
+    background-color: #f2f2f2;															/* we need a background if collapsing nav bar is used */
+    /*border-bottom: 1px solid #f2f2f2;*/
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -124,7 +124,7 @@ hr.small {
   }
   .navbar-custom.is-fixed .nav li a {
     /*color: #404040;*/
-	color: #f2f2f2
+	color: #484848																		/* we want to make this a little darker for now as nav bar collapses when user scrolls */
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
