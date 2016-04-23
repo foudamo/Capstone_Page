@@ -4,7 +4,6 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-/*	Deprecated, we're not using the Bootstrap contact form 
 // Contact Form Scripts
 $(function() {
 
@@ -70,12 +69,13 @@ $(function() {
         $(this).tab("show");
     });
 });
-*/
+
 
 // Contact form
-var message = "";
+var name = $('#contactForm').find('name').html();
+var email = $('#contactForm').find('email').html();
+var description = $('#contactForm').find('message').html();
 
-/*
 var message =
 		'<ul>'+
 			'<li>'+
@@ -83,21 +83,16 @@ var message =
 			'</li>' +
 					'Email: ' + email +
 			'<li>'+
-					'Description: ' + description +
+					'Message: ' + description +
 			'</li>' +
 		'</ul>';
-*/
 		
 $("#sendMessage").on("click", function() {
-    message = $("#contactForm").serialize();
+    //message = $("#contactForm").serialize();
     $.ajax({
         url: "//formspree.io/ballpickingrobot@gmail.com", 
         method: "POST",
-        data: {
-		    name: $(#contactForm).find("input[name='name']").val(),
-			_replyto: $(form).find("input[name='_replyto']").val(),
-			message: $(form).find("textarea[name='message']").val()			
-		},
+        data: {message,message},
         dataType: "json"
     });
     alert('Thanks for the email, we\'ll be in touch promptly.');
