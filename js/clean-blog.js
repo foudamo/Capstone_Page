@@ -89,7 +89,7 @@ var message =
 */
 		
 $("#sendMessage").on("click", function() {
-    //message = $("#contactForm").serialize();
+    message = $("#contactForm").serialize();
     $.ajax({
         url: "//formspree.io/ballpickingrobot@gmail.com", 
         method: "POST",
