@@ -4,7 +4,7 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- /*
+/*	Deprecated, we're not using the Bootstrap contact form 
 // Contact Form Scripts
 $(function() {
 
@@ -72,6 +72,7 @@ $(function() {
 });
 */
 
+// Contact form
 var message = "";
 
 $("#sendMessage").on("click", function() {
