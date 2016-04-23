@@ -4,8 +4,8 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ /*
 // Contact Form Scripts
-
 $(function() {
 
     $("#contactFrom input,#contactForm textarea").jqBootstrapValidation({
@@ -69,6 +69,21 @@ $(function() {
         e.preventDefault();
         $(this).tab("show");
     });
+});
+*/
+
+var message = "";
+
+$("#sendMessage").on("click", function() {
+    message = $("#contactForm").serialize();
+    $.ajax({
+        url: "//formspree.io/ballpickingrobot@gmail.com", 
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('Thanks for the email, we\'ll be in touch promptly.');
+    return false;
 });
 
 
