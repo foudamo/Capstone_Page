@@ -9,14 +9,46 @@ body {
 }
 .thumb {
     margin-bottom: 0px;
+	border: 1px solid #ddd;
 }
-.thumbnail {
+ul.row {
 	margin-bottom: 0px;
+}
+ul li {     
+  list-style:none;
+}
+ul li img {
+  cursor: pointer;
 }
 .modal-content{
 	width: 1000px;
 	margin-left: -200px;		/* to keep it centered: margin-left = (600px - [New Width])/2 */
 }
+.modal-body {
+  padding:5px !important;
+}
+.modal-dialog img {
+  text-align:center;
+  margin:0 auto;
+}
+/* modal next/prev button */
+.controlsmodal{
+	width:100px;
+	display:block;
+	font-size:18px;
+	padding-top:4px;
+	font-weight:bold;
+	color: #0085a1;
+}
+/* X 'close' icon when modal window is open */
+.glyphicon-remove-circle:hover {
+  cursor: pointer;
+}
+.next {
+	float:right;
+	text-align:right;
+}
+
 
 /* Currently deprecated
 img-thumb {

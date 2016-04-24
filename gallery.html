@@ -30,6 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <body>
@@ -71,7 +72,7 @@
 	MD - medium screens (some desktops)
 	LG - large screens (rest of desktops)
 	col-*-**:
-		** means how many columsn it spans. Each divs is divided into 12 columns.
+		** means how many columns it spans. Each divs is divided into 12 columns.
 			e.g. you want to have 3 equal columns, do col-*-4.
 		* means the device you're defining your columns for. Check documentation online which will tell you screen sizes corresponding to each 'size'.
 			e.g. for a phone (extra small - XS, <= 768px), col-xs-6 means those users will see 2 columns
@@ -80,60 +81,49 @@
 	
 	<!-- Page Content -->
 	<div class="container">
-        <div class="row">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img src="img/golf3.png">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img src="img/home-bg.jpg">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="#">
-						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
-					</a>
-				</div>
-				
-				<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-					<div class="modal-content">              
-					  <div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						<img src="" class="imagepreview" style="width: 100%;" >
-					  </div>
-					</div>
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+		<!-- I can't figure out where ul class="row" randomly got a padding of 40px, so have to manually remove it -->
+		    <ul class="row" style="padding-left:0px"> 
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="img/golf3.png">
+				</li>
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="img/home-bg.jpg">
+				</li>
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+				</li>
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+				</li>
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+				</li>
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+				</li>
+				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<img class="img-responsive" src="img/about-bg.jpg" alt="">
+				</li>
+			</ul>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">              
+				  <div class="modal-body">
+					<!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+					<!--<img src="" class="imagepreview" style="width: 100%;" >-->
 				  </div>
 				</div>
+				<!-- modal content end -->
+			  </div>
+			  <!-- modal dialog end -->
 			</div>
-			<!-- formatting end -->
-        </div>
-		<!-- row end -->
+			<!-- modal end -->
+		</div>
+		<!-- formatting end -->
 	</div>
 	<!-- container end -->
+
 	
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -145,7 +135,7 @@
                     <div class="post-heading">
                         <h1>Man must explore, and this is exploration at its greatest</h1>
                         <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                        <span class="meta">Posted by <a >Start Bootstrap</a> on August 24, 2014</span>
                     </div>
                 </div>
             </div>
@@ -271,6 +261,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.js"></script>
+	
+	<!-- Gallery Script -->
+	<script src="js/photo-gallery.js"></script>
+
 
 </body>
 
