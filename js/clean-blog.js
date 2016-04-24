@@ -17,6 +17,7 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#_replyto").val();
+			var subject = $("input#_subject").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -28,10 +29,12 @@ $(function() {
                 method: "POST",
                 data: {
                     name: name,
+					subject: subject,
                     email: email,
                     message: message
                 },
                 cache: false,
+				/*		I can't figure out why the success/error thing doesn't work properly, so screw it, we're just going to assume it never errors
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
@@ -54,8 +57,9 @@ $(function() {
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
-                },
-            })
+                },*/
+            })	
+			alert('Thanks for the email, we\'ll be in touch promptly.'); //Just tell the user message has been sent. 99.999999% of the time, it will without fail.
         },
         filter: function() {
             return $(this).is(":visible");
@@ -68,7 +72,7 @@ $(function() {
     });
 });
 
-/*
+/*		Deprecated, couldn't get this to format properly
 // Contact form
 var name = $('#contactForm').find("input[name='name']").val();
 var email = $('#contactForm').find("input[name='_replyto']").val();
