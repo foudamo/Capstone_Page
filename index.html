@@ -50,8 +50,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!--<a href="index.html" class="logo"></a>-->
                 <a href="index.html">
-                    <img class="img-responsive" src="img/Logo_banner.png" alt=""> 			<!-- we need to make this logo bigger, currently too blurry -->
+                    <img class="img-responsive" src="img/Logo_banner.png" alt="logo" height="70" width="145" align="middle"> 		 <!--we need to make this logo bigger, currently too blurry -->
                 </a>
                 <!--<a class="navbar-brand" href="index.html">The Ball Picking Robot</a>-->
             </div>
@@ -62,7 +63,7 @@
                     <li><a href="index.html">Home</a></li>
 					<li><a href="gallery.html">Gallery</a></li> 					<!-- make sure to update this to a page with our gallery stuff -->
                     <li><a href="about.html">Team</a></li>
-                    <li><a href="faq.html">FAQ</a></li>							<!-- this will have FAQ + contact form. Can easily set up a group gmail -->
+                    <li><a href="index.html#footer">Contact</a></li>							<!-- this will have FAQ + contact form. Can easily set up a group gmail -->
                 </ul>
             </div>			
             <!-- /.navbar-collapse -->
@@ -100,7 +101,8 @@
         </div>
 
         <!-- Pic -->
-        <img src="img/golf.png" alt="Norway" width="100%" height="100%">
+<!-- Mohamed here ====== I still need to tweak this photo (just need to add golf balls on top of the field). --> 
+        <img src="img/golf-field.png" alt="Norway" width="100%" height="100%">
 
     </header>
 
@@ -136,7 +138,7 @@
     </div>
 
     <!-- Footer -->
-    <footer style="background-color: #313131">
+    <footer id="footer" style="background-color: #313131">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -177,7 +179,10 @@
 						<p class="footer summary" align="justify">We are a team of seven Mechatronics and Software Engineering students at McMaster University. The BPR was created as a proof of concept for a larger vision; 
 						the Autonomous Robot Platform. With this, we are hoping to prove that common tasks such as picking up and collecting objects can be made more efficient and less costly through the use of robotics.</p>                    
 					</div>
-					
+<!-- Mohamed here ====== Okay a couple of things. first, the "contact us" portion shouldn't be on every page (because we already have it in the bar), so remove it from the footer of the sub-pages and just leave it on the Home-page (or even better, just have it on its own page and not in any footer)
+
+                         Secondly, the "who are we" description above I copied to the Team page. This part should be instead something about contacting us like "Would you like to get in touch with us, or have any questions to ask? Feel free to message us blah blah" --> 					
+
 					<!-- email: ballpickingrobot@gmail.com; password: <message alfred for this> -->							
 					<div class="column" style="float: right;">
 						<form name="sentMessage" id="contactForm" method="POST">
@@ -220,7 +225,8 @@
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 					<p class="copyright text-muted"><br>CAS - McMaster University<br>&copy 2016 BPR</p>
 					<!-- for now clicking logo will refresh home page... I want to eventually make it maybe just scroll user to top of page. Looks better. --> 
-				    <p style="text-align:center; margin-top: 0px; margin-bottom: 0px;"><a href="index.html"><img align="center" src="img/CAPSTONE_LOGO_v2ww.png" width="10%" height="10%"></a></p>
+<!-- Mohamed here ====== No clicking on the logo should have no effect! Instead, have a "scroll to the top" icon that appears once you get here. --> 
+				    <p style="text-align:center; margin-top: 0px; margin-bottom: 0px;"><a href="index.html"><img align="center" src="img/Logo_footer.png" width="10%" height="10%"></a></p>
 				</div>
             </div>
 			<!-- row end -->

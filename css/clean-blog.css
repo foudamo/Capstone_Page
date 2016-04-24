@@ -138,6 +138,26 @@ hr.small {
     -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
+/*
+  @media (min-width: 768px){
+    .logo {
+        height: 70px;
+        width: 145px;
+    }
+  }
+  
+  .logo {
+      background: url("img/logo_banner.png") no-repeat center center;
+      background-size: contain;
+      display: inline-block;
+      height: 50px;
+      width: 135px;
+      vertical-align: middle;
+  }
+  
+  a {
+      text-decoration: none;
+  }*/
 }
 /*===================================================================*/
 .intro-header {
