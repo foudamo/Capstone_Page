@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/clean-blog.css" rel="stylesheet">
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +36,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -62,9 +63,81 @@
         </div>
         <!-- /.container -->
     </nav>
-
+	
+	<!-- 
+	For future reference (ref: https://stackoverflow.com/questions/24175998/meaning-of-numbers-in-col-md-4-col-xs-1-col-lg-2-in-bootstrap):
+	XS - extra small screens (mobile phones)
+	SM - small screens (tablets)
+	MD - medium screens (some desktops)
+	LG - large screens (rest of desktops)
+	col-*-**:
+		** means how many columsn it spans. Each divs is divided into 12 columns.
+			e.g. you want to have 3 equal columns, do col-*-4.
+		* means the device you're defining your columns for. Check documentation online which will tell you screen sizes corresponding to each 'size'.
+			e.g. for a phone (extra small - XS, <= 768px), col-xs-6 means those users will see 2 columns
+	There's a lot of caveats and more details online, visit that stackoverflow link. Or Google for Bootstrap documentation.
+	-->
+	
+	<!-- Page Content -->
+	<div class="container">
+        <div class="row">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img src="img/golf3.png">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img src="img/home-bg.jpg">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="http://placehold.it/400x300" alt="">
+					</a>
+				</div>
+				
+				<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">              
+					  <div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<img src="" class="imagepreview" style="width: 100%;" >
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<!-- formatting end -->
+        </div>
+		<!-- row end -->
+	</div>
+	<!-- container end -->
+	
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
+	<!-- default content
     <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
         <div class="container">
             <div class="row">
@@ -77,9 +150,10 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <!-- Post Content -->
+	<!-- default content
     <article>
         <div class="container">
             <div class="row">
@@ -122,44 +196,15 @@
             </div>
         </div>
     </article>
+    <hr> -->
 
-    <hr>
-
+	<br>
+	
     <!-- Footer -->
     <footer style="background-color: #313131">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <!--
-					<ul class="list-inline text-center">
-                       
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    
-                    </ul>-->
-					
 					<div class="column">
 						<p class="footer summary-title"><a href="faq.html">FAQ</a></p>
 						<p class="footer summary-title"><a href="about.html">MEET THE TEAM</a></p>

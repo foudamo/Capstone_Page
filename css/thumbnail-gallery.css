@@ -7,11 +7,28 @@
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
-
 .thumb {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+.thumbnail {
+	margin-bottom: 0px;
+}
+.modal-content{
+	width: 1000px;
+	margin-left: -200px;		/* to keep it centered: margin-left = (600px - [New Width])/2 */
 }
 
-footer {
-    margin: 50px 0;
+/* Currently deprecated
+img-thumb {
+    height: auto;
+    max-width: 640px;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
+img.expanded {
+    max-width: 2000px;
+}
+*/
