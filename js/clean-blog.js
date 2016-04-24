@@ -17,7 +17,6 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -25,11 +24,10 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
+                url: "//formspree.io/ballpickingrobot@gmail.com",
+                method: "POST",
                 data: {
                     name: name,
-                    phone: phone,
                     email: email,
                     message: message
                 },
@@ -52,7 +50,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that your email could not be sent. Please try again later!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
@@ -70,12 +68,12 @@ $(function() {
     });
 });
 
-
+/*
 // Contact form
 var name = $('#contactForm').find("input[name='name']").val();
 var email = $('#contactForm').find("input[name='_replyto']").val();
-var description = $('#contactForm').find("textarea[name='message']").val();
-
+var message = $('#contactForm').find("textarea[name='message']").val();
+*/
 /*
 var message =
 		'<ul>'+
@@ -84,7 +82,7 @@ var message =
 			'<li>'+	'Message: ' + description + '</li>' +
 		'</ul>';
 */
-
+/*
 $("#sendMessage").on("click", function() {
     //message = $("#contactForm").serialize();
     $.ajax({
@@ -96,7 +94,7 @@ $("#sendMessage").on("click", function() {
     alert('Thanks for the email, we\'ll be in touch promptly.');
     return false;
 });
-
+*/
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
