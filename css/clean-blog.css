@@ -468,11 +468,14 @@ body {
 /*===================================================================*/
 /*Custom*/
 .column {
-     width:300px;
-     float:left
+    width:300px;
+    float:left
 }
-
 a:link,
 a:hover {
 	text-decoration:none;
+}
+.aboutus {
+	margin: 0px;
+	margin-top: 30px;
 }
