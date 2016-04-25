@@ -86,9 +86,11 @@ hr.small {
     color: #7e7b7b;
     padding: 20px;
   }
+/* this will change nav bar hover colour, WHILE user is at top of page (ie. no floating nav) */
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    /*color: rgba(255, 255, 255, 0.8);*/
+	color: #0085a1;
   }
 }
 @media only screen and (min-width: 1170px) {
