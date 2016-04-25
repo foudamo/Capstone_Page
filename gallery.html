@@ -70,7 +70,8 @@
     </nav>
 	
 	<!-- Header -->
-	<!--<header class="intro-header" style="background-color: #b7d6e3"></head>-->
+	<!-- site-heading has padding-top/bottom 150px, so remove 150px because we have no header here. -->
+	<header class="intro-header" style="background-color: #f6f6f6"><div class="site-heading" style="padding-bottom: 0px"></div></head>
 
 	<!-- 
 	For future reference (ref: https://stackoverflow.com/questions/24175998/meaning-of-numbers-in-col-md-4-col-xs-1-col-lg-2-in-bootstrap):
@@ -86,9 +87,8 @@
 	There's a lot of caveats and more details online, visit that stackoverflow link. Or Google for Bootstrap documentation.
 	-->
 	
-	<!-- Page Content -->
-	<!-- padding-top should match the padding given to "site-heading" in index.html -->
-	<div class="container" style="padding-top:150px"> 
+	<!-- Main Content -->
+	<div class="container"> 
 		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 		<!-- I can't figure out where ul class="row" randomly got a padding of 40px, so have to manually remove it -->
 		    <ul class="row" style="padding-left:0px"> 

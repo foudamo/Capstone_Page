@@ -35,7 +35,8 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+	<!-- I'm okay with all pages except the homepage having a small tint to show nav bar -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="background-color:#f2f2f2">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -69,19 +70,23 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/about-bg.jpg'); margin-bottom: 20px">
-        <div class="container">
+	<!-- page-heading has padding-top/bottom 150px, so remove 150px because we have no header here. -->
+	<!-- In this particular instance, I'm removing basically all padding - there's no sense to make this page longer than it needs to be -->
+    <header class="intro-header" style="background-color: #f6f6f6 margin-bottom: 20px"> <!--background-image: url('img/about-bg.jpg');-->
+		<div class="page-heading" style="padding-top: 50px; padding-bottom: 0px"></div>
+	</header>
+        <!--<div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
+                    <div class="page-heading" style="padding-bottom: 0px">
                         <h1>The Team</h1>
-                        <!--<hr class="small">
-                        <span class="subheading">This is what we do.</span>-->
+                        <hr class="small">
+                        <span class="subheading">This is what we do.</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
 
     <!-- Main Content -->
     <div class="container">
