@@ -21,8 +21,9 @@ ul li img {
   cursor: pointer;
 }
 .modal-content{
-	width: 1000px;
-	margin-left: -200px;		/* to keep it centered: margin-left = (600px - [New Width])/2 */
+	width: 1200px;
+	height: auto;
+	margin-left: -300px;		/* to keep it centered: margin-left = (600px - [New Width])/2 */
 }
 .modal-body {
   padding:5px !important;
