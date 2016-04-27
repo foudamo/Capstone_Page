@@ -70,10 +70,12 @@
     </nav>
 	
 	<!-- Header -->
-	<!-- site-heading has padding-top/bottom 150px, so remove 150px because we have no header here. -->
+	<!-- site-heading has padding-top/bottom 150px, so remove 150px because we have no header here. 50px for top is custom. -->
     <header class="intro-header" style="background-color: #f6f6f6 margin-bottom: 20px"> <!--background-image: url('img/about-bg.jpg');-->
 		<div class="page-heading" style="padding-top: 50px; padding-bottom: 0px"></div>
 	</header>
+	
+	<!-- we're going to deprecate the below section in favour of using masonry with no modal pop up -->
 	<!-- 
 	For future reference (ref: https://stackoverflow.com/questions/24175998/meaning-of-numbers-in-col-md-4-col-xs-1-col-lg-2-in-bootstrap):
 	XS - extra small screens (mobile phones)
@@ -92,90 +94,90 @@
 	<div class="container"> 
 		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 		<!-- I can't figure out where ul class="row" randomly got a padding of 40px, so have to manually remove it -->
-		    <ul class="row" style="padding-left:0px"> 
+		    <ul class="row" style="padding-left:0px" style="max-height: 100%"> 
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(1).JPG">
+					<img class="imggallery" src="img/gallery/(1).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(2).JPG">
+					<img class="imggallery" src="img/gallery/(2).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(3).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(3).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(4).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(4).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(5).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(5).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(6).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(6).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(7).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(7).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(8).JPG">
+					<img class="imggallery" src="img/gallery/(8).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(9).JPG">
+					<img class="imggallery" src="img/gallery/(9).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(10).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(10).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(11).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(11).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(12).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(12).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(13).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(13).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(14).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(14).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(15).JPG">
+					<img class="imggallery" src="img/gallery/(15).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(16).JPG">
+					<img class="imggallery" src="img/gallery/(16).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(17).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(17).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(18).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(18).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(19).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(19).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(20).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(20).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(21).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(21).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(22).JPG">
+					<img class="imggallery" src="img/gallery/(22).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(23).JPG">
+					<img class="imggallery" src="img/gallery/(23).JPG">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(24).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(24).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(25).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(25).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(26).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(26).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(27).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(27).JPG" alt="">
 				</li>
 				<li class="col-lg-4 col-md-4 col-xs-6 thumb">
-					<img class="img-responsive" src="img/gallery/(28).JPG" alt="">
+					<img class="imggallery" src="img/gallery/(28).JPG" alt="">
 				</li>
 			</ul>
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -267,13 +269,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					<div class="column">
+					<div class="columnfooter">
+						<p class="footer summary-title"><a href="faq.html">Meet the Team</a></p>
 						<p class="footer summary-title"><a href="faq.html">Contact Us</a></p>
-						<p class="footer summary" align="justify">Would you like to get in touch with us? Feel free to send us a message and we will try to get back to you within 24 hours!</p>                  
+						<p class="footer summary" align="justify">Have any questions or feedback? Send us a message and we'll get back to you as soon as we can.</p>                  
 					</div>
 					
 					<!-- email: ballpickingrobot@gmail.com; password: <message alfred for this> -->							
-					<div class="column" style="float: right;">
+					<div class="columnfooter" style="float: right;">
 						<form name="sentMessage" id="contactForm" method="POST">
 							<div class="row control-group">
 								<div class="form-group col-xs-12 floating-label-form-group controls">
@@ -330,9 +333,11 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.js"></script>
 	
-	<!-- Gallery Script -->
+	<!-- Gallery JavaScript for Modal Popup -->
 	<script src="js/photo-gallery.js"></script>
-
+	
+	<!-- Masonry JavaScript for Grid Layout -->
+	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 
 </body>
 
